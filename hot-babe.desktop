@@ -1,11 +1,11 @@
 [Desktop Entry]
 Name=Hot-babe
 Comment=System load monitor
-Comment[pl]=Monitor obci±¿enia systemu
+Comment[pl]=Monitor obciÄ…Å¼enia systemu
 Icon=hot-babe-32.png
 Exec=hot-babe
 Terminal=false
 Type=Application
 Encoding=UTF-8
-Categories=Application;System;Utilities;
+Categories=GTK;System;Monitor;
 # vi: encoding=utf-8
