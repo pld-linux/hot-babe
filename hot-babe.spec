@@ -28,7 +28,7 @@ Of course, if you can be shocked by nudity, don't use it!
 
 %description -l pl
 Hot-babe to ma³e graficzne narzêdzie wy¶wietlaj±ce aktywno¶æ systemu w
-do¶æ specyficzny sposób. Gdy procesor jest beczynny, program wy¶wietla
+do¶æ specyficzny sposób. Gdy procesor jest bezczynny, program wy¶wietla
 ubran± dziewczynê, a gdy aktywno¶æ lub temperatura wzrasta, dziewczyna
 zaczyna siê rozbieraæ. Gdy aktywno¶æ systemu osi±gnie 100%, bohaterka
 stanie siê ca³kowicie naga.
