@@ -1,12 +1,12 @@
 Summary:	A GTK+ based monitoring application
 Summary(pl):	Oparta na GTK+ aplikacja monitoruj±ca pracê systemu
 Name:		hot-babe
-Version:	0.2.1
+Version:	0.2.2
 Release:	1
 License:	Artistic
 Group:		X11/Applications
 Source0:	http://dindinx.net/hotbabe/downloads/%{name}-%{version}.tar.bz2
-# Source0-md5:	6b3a59762f3c699696b259b83e9d4307
+# Source0-md5:	482a9496b493d2394601689659971042
 Source1:	%{name}.desktop
 Source2:	%{name}-32.png
 URL:		http://dindinx.net/hotbabe/
@@ -39,7 +39,7 @@ programu!
 %build
 %{__make} \
 	CC="%{__cc}" \
-	CFLAGS="%{rpmcflags} -Wall `pkg-config gdk-2.0 gdk-pixbuf-2.0 --cflags` -DPREFIX=\\\"%{_prefix}\\\""
+	CFLAGS="%{rpmcflags} -Wall `pkg-config gdk-2.0 gdk-pixbuf-2.0 --cflags` -DPREFIX=\\\"%{_prefix}\\\" -DVERSION=\\\"%{version}\\\""
 
 %install
 rm -rf $RPM_BUILD_ROOT
