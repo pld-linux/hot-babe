@@ -1,20 +1,20 @@
 Summary:	A GTK+ based monitoring application
 Summary(pl):	Oparta na GTK+ aplikacja monitoruj±ca pracê systemu
 Name:		hot-babe
-Version:	0.1.2
-Release:	2
-License:	GPL	
+Version:	0.2.0
+Release:	1
+License:	Artistic
 Group:		X11/Applications
 Source0:	http://dindinx.net/hotbabe/downloads/%{name}-%{version}.tar.bz2
-# Source0-md5:	ff7ca9f0b4459927ee0358aa1c66c2bf
+# Source0-md5:	e0de887b9ea75dad221830ccfcc3a6da
 Source1:	%{name}.desktop
 Source2:	%{name}-32.png
 # Do we support these?
 #Source3:	%{name}-16.png
 #Source4:	%{name}-48.png
 URL:		http://dindinx.net/hotbabe/
-BuildRequires:	gtk+-devel
-BuildRequires:	gdk-pixbuf-devel
+BuildRequires:	gtk+2-devel >= 2.0.0
+BuildRequires:	pkgconfig
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -42,13 +42,15 @@ programu!
 %build
 %{__make} \
 	CC="%{__cc}" \
-	CFLAGS="%{rpmcflags} -Wall `gtk-config --cflags` `gdk-pixbuf-config --cflags`"
+	CFLAGS="%{rpmcflags} -Wall `pkg-config gdk-2.0 gdk-pixbuf-2.0 --cflags` -DDESTDIR=\\\"%{_prefix}\\\""
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT{%{_bindir},%{_desktopdir},%{_pixmapsdir},%{_mandir}/man1}
+install -d $RPM_BUILD_ROOT{%{_desktopdir},%{_pixmapsdir},%{_mandir}/man1}
 
-install %{name} $RPM_BUILD_ROOT%{_bindir}
+%{__make} install \
+	DESTDIR=$RPM_BUILD_ROOT%{_prefix}
+
 install hot-babe.1 $RPM_BUILD_ROOT%{_mandir}/man1
 
 install %{SOURCE1} $RPM_BUILD_ROOT%{_desktopdir}
@@ -59,8 +61,9 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc ChangeLog NEWS README TODO
+%doc CONTRIBUTORS ChangeLog NEWS TODO
 %attr(755,root,root) %{_bindir}/*
+%{_datadir}/hot-babe
 %{_mandir}/man1/*.1*
 %{_desktopdir}/*
 %{_pixmapsdir}/*
