@@ -1,5 +1,5 @@
 Summary:	A GTK+ based monitoring application
-Summary(pl):	Oparta na GTK+ aplikacja monitoruj±ca pracê systemu
+Summary(pl.UTF-8):   Oparta na GTK+ aplikacja monitorujÄ…ca pracÄ™ systemu
 Name:		hot-babe
 Version:	0.2.2
 Release:	1
@@ -23,14 +23,14 @@ reaches 100%.
 
 Of course, if you can be shocked by nudity, don't use it!
 
-%description -l pl
-Hot-babe to ma³e graficzne narzêdzie wy¶wietlaj±ce aktywno¶æ systemu w
-do¶æ specyficzny sposób. Gdy procesor jest bezczynny, program wy¶wietla
-ubran± dziewczynê, a gdy aktywno¶æ lub temperatura wzrasta, dziewczyna
-zaczyna siê rozbieraæ. Gdy aktywno¶æ systemu osi±gnie 100%, bohaterka
-stanie siê ca³kowicie naga.
+%description -l pl.UTF-8
+Hot-babe to maÅ‚e graficzne narzÄ™dzie wyÅ›wietlajÄ…ce aktywnoÅ›Ä‡ systemu w
+doÅ›Ä‡ specyficzny sposÃ³b. Gdy procesor jest bezczynny, program wyÅ›wietla
+ubranÄ… dziewczynÄ™, a gdy aktywnoÅ›Ä‡ lub temperatura wzrasta, dziewczyna
+zaczyna siÄ™ rozbieraÄ‡. Gdy aktywnoÅ›Ä‡ systemu osiÄ…gnie 100%, bohaterka
+stanie siÄ™ caÅ‚kowicie naga.
 
-Je¶li mo¿esz poczuæ siê ura¿ony widokiem nago¶ci, nie u¿ywaj tego
+JeÅ›li moÅ¼esz poczuÄ‡ siÄ™ uraÅ¼ony widokiem nagoÅ›ci, nie uÅ¼ywaj tego
 programu!
 
 %prep
