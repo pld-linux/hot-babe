@@ -1,5 +1,5 @@
 Summary:	A GTK+ based monitoring application
-Summary(pl.UTF-8):   Oparta na GTK+ aplikacja monitorująca pracę systemu
+Summary(pl.UTF-8):	Oparta na GTK+ aplikacja monitorująca pracę systemu
 Name:		hot-babe
 Version:	0.2.2
 Release:	1
